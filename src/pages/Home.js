@@ -32,6 +32,12 @@ function Home() {
     fetchData();
   }, [query]);
 
+  const showDash = () => {
+    if (show === true) {
+      setShow(!show);
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -42,9 +48,7 @@ function Home() {
       setText("");
     }
 
-    if (show === true) {
-      setShow(!show);
-    }
+    showDash();
   };
   console.log(show);
 
@@ -53,6 +57,7 @@ function Home() {
       setShow(!show);
     }
   };
+
   return (
     <>
       <Sidebar />
