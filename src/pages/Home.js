@@ -18,7 +18,7 @@ function Home() {
   const [query, setQuery] = useState("");
   const [text, setText] = useState("");
 
-  //api fetching
+  //API fetching
 
   useEffect(() => {
     const fetchData = async () => {
@@ -63,7 +63,6 @@ function Home() {
       <Sidebar />
       <div>
         {/* search bar */}
-        {/* <Searchbar /> */}
         <div className="search">
           <div className="searchInputs">
             <div className="searchIcon">
@@ -110,7 +109,7 @@ function Home() {
             />
           </div>
         </div>
-        {/* home page */}
+        {/* Home page */}
         {show ? (
           <>
             <div>
